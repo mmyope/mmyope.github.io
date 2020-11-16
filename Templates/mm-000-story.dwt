@@ -28,8 +28,8 @@
   <!-- TemplateEndEditable -->
 	  
 	<a href="../index.html">
-			<img id="xs-header" class="center" src="../images/HEADERs/xs-header.svg" alt="Les Éditions MMYOPE">
-			<img id="sm-header" src="../images/HEADERs/sm-header.svg" alt="Les Éditions MMYOPE">
+			<img id="xs-header" class="center" src="../images/headers/xs-header.svg" alt="Les Éditions MMYOPE">
+			<img id="sm-header" src="../images/headers/sm-header.svg" alt="Les Éditions MMYOPE">
 		</a>  
   </header>
 
