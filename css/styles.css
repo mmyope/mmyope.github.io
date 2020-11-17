@@ -17,17 +17,13 @@
   --measure: 60ch
 }
 
-
-
 *{
 	box-sizing: border-box;
 }
 
-
-
 body{
   font-size: 62.5%;
-  font-family: "EB-garamond", serif;
+  font-family: "EB garamond", serif;
   text-align: center;
 }
 
@@ -40,10 +36,13 @@ footer {
 	padding-top: var(--s1);
 }
 
-a {
+a:link, a:visited, a:hover, a:active {
 	color: black;
+	cursor: crosshair;
 	text-decoration: none;
 }
+
+
 
 .grid{
   display: grid;
@@ -184,6 +183,7 @@ a {
 }
 
 .w-auto {
+	max-width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -194,11 +194,15 @@ a {
 	max-width: 80vw;
 }
 
+.blank-lib {
+	min-width: 100%;
+}
+
 .invert-clr {
 	filter: invert(100%);
 }
 
-#bg-blk {
+.bg-blk {
 	background-color: #000000;
 }
 
@@ -210,37 +214,28 @@ a {
 /*TYPE*/
 
 h1{
+	font-family: 'EB garamond', serif;
 	font-size: var(--s1);
 	font-weight: 700;
 }
 
 h2{
+	font-family: 'EB garamond', serif;
 	font-size: var(--s1);
 	font-style: italic;
 }
 
 p{
 	font-size: 1rem;
-	font-family: "Raleway", sans-serif;
-}
-
-#footer-story {
-	position: static;
-	left: var(--s0);
-	right: var(--s0);
-	bottom: var(--s1);
-	opacity: 0;
-	transition: opacity 1s;
-}
-#footer-story.visible {
-	opacity: 1;
+	font-family: 'Raleway', sans-serif;
 }
 
 #about-p {
-	font-family: "EB-garamond", serif;
+	font-family: 'EB garamond', serif;
 	font-size: 4vw;
 	text-align: left;
 }
+
 
 /*Xs*/
 
@@ -265,28 +260,10 @@ p{
 	}
   #sm-header {
 	display: block;
-	margin-left: var(--s4);
-	margin-right: var(--s4);
+	padding-left: auto;
+	padding-right: auto;
 	}
   #about-p {
 		font-size: 2vw;
 	}
-  
-
-/*Md*/
-
-@media (min-width: 768px) {
-	
-}
-
-/*Lg*/
-
-@media (min-width: 992px) {
-	
-}
-
-/*XL*/
-
-@media (min-width: 1200px) {
-	
 }
