@@ -19,36 +19,37 @@
 	
 <body class="cover">
 	
-  <header>
-		<a href="../index.html" >
-		<img id="xs-header" class="w-auto" src="images/headers/xs-header.svg" alt="Éditions MMYOPE">
-		<img id="sm-header" class="w-auto" src="images/headers/sm-header.svg" alt="Éditions MMYOPE">
-		</a>  
-  </header>
+<header>
+	<a href="../index.html" >
+	<img id="xs-header" class="w-auto" src="../images/headers/xs-header.svg" alt="Éditions MMYOPE">
+	<img id="sm-header" class="w-auto" src="../images/headers/sm-header.svg" alt="Éditions MMYOPE">
+	</a>  
+</header>
 
 <!--make sure to change the template with the correct information, ya dumb nut-->	
 	
-  <main class="stack">
+<main >
 	<div class="center">
-		<!-- TemplateBeginEditable name="issue-number" -->
-		<h1>ISSUE 000</h1>
-		<!-- TemplateEndEditable -->
+	<!-- TemplateBeginEditable name="issue-number" -->
+	<h1>ISSUE 000</h1>
+	<!-- TemplateEndEditable -->
 	</div>
 	
 	<!-- TemplateBeginEditable name="story-link" -->
 	<a href="../index.html">
 	<!-- TemplateEndEditable -->
-	<div class="grid">
+	
+	<div class="stack grid latest">
 		<div class="stack">
 			<div>
 			<div class="frame">
-				<!-- TemplateBeginEditable name="cover-image" -->
-				<img src="../images/homepage/1A21.jpeg" alt="">
-				<!-- TemplateEndEditable -->
+			<!-- TemplateBeginEditable name="cover-image" -->
+			<img src="../images/homepage/1A21.jpeg" alt="">
+			<!-- TemplateEndEditable -->
 			</div>
 			</div>
 		</div>
-    	
+		
 		<div class="stack">
 			<div class="ver-cntr">
 			<!-- TemplateBeginEditable name="story-title" -->
@@ -56,34 +57,36 @@
 			<!-- TemplateEndEditable -->
 
 			<!-- TemplateBeginEditable name="story-summary" -->
-			<p class="lastest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab ut consequuntur, molestiae excepturi tenetur.</p>
+			<p class="lastest-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab ut consequuntur, molestiae excepturi tenetur.</p>
 			<!-- TemplateEndEditable -->
 			</div>
 		</div>
 	</div>
-	</a>
-	  
-	
-  </main>
-	
-	<div class="container">
-		<div class="row">
-		<div class="col-4">
-			<!-- TemplateBeginEditable name="next-issue-number/link" -->
-			<a href="#"><h1 style="text-align:center">000</h1></a>
-			<!-- TemplateEndEditable -->  
-		</div>
 		
-		<div class="col-4"> <a  class="w-auto" href="../library.html"><h1 style="text-align: center"> LIBRARY </h1></a> </div>
-		
-		<div class="col-4">
-			<!-- TemplateBeginEditable name="previous-issue-number/link" -->
-			<a href="#"> <h1 style="text-align: center">000</h1> </a>
-			<!-- TemplateEndEditable -->
-		</div>
-		</div>  
-	</div>  
+	</a>  
 
+</main>
+	
+<div class="stack">
+	<div class="container">
+	<div class="row">
+	  <div class="col-4">
+	  <!-- TemplateBeginEditable name="next-issue-number/link" -->
+	  <a class="center" href="#"><h1 style="text-align:center">000</h1></a>
+	  <!-- TemplateEndEditable -->  
+	  </div>
+		
+	  <div class="col-4"> <a class="center" href="../library.html"><h1> LIBRARY </h1></a> </div>
+		
+	  <div class="col-4">
+	  <!-- TemplateBeginEditable name="previous-issue-number/link" -->
+	  <a class="center" href="#"> <h1 style="text-align: center">000</h1> </a>
+	  <!-- TemplateEndEditable -->
+	  </div>
+	</div>
+	</div>  	
+</div>
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="../js/jquery-3.4.1.min.js"></script>
 
