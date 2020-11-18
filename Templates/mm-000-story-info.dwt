@@ -63,6 +63,9 @@
 	</div>
 	</a>
 	  
+	
+  </main>
+	
 	<div class="container">
 		<div class="row">
 		<div class="col-4">
@@ -80,7 +83,6 @@
 		</div>
 		</div>  
 	</div>  
-  </main>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="../js/jquery-3.4.1.min.js"></script>
