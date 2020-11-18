@@ -21,7 +21,7 @@
 	
   <header>
 		<a href="../index.html" >
-		<img id="xs-header" class="center" src="images/headers/xs-header.svg" alt="Éditions MMYOPE">
+		<img id="xs-header" class="w-auto" src="images/headers/xs-header.svg" alt="Éditions MMYOPE">
 		<img id="sm-header" class="w-auto" src="images/headers/sm-header.svg" alt="Éditions MMYOPE">
 		</a>  
   </header>
@@ -62,9 +62,7 @@
 		</div>
 	</div>
 	</a>
-  </main>
-	
-  <footer class="stack">
+	  
 	<div class="container">
 		<div class="row">
 		<div class="col-4">
@@ -73,7 +71,7 @@
 			<!-- TemplateEndEditable -->  
 		</div>
 		
-		<div class="col-4"> <a href="../library.html"><h1 style="text-align: center"> LIBRARY </h1></a> </div>
+		<div class="col-4"> <a  class="w-auto" href="../library.html"><h1 style="text-align: center"> LIBRARY </h1></a> </div>
 		
 		<div class="col-4">
 			<!-- TemplateBeginEditable name="previous-issue-number/link" -->
@@ -81,8 +79,8 @@
 			<!-- TemplateEndEditable -->
 		</div>
 		</div>  
-	</div>
-  </footer>
+	</div>  
+  </main>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="../js/jquery-3.4.1.min.js"></script>
