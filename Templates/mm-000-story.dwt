@@ -53,16 +53,16 @@
 	<div class="row">
 		<div class="col-4">
 		<!-- TemplateBeginEditable name="next-issue-number/link" -->
-		<a class="center" href="#"><h2 style="text-align:center">000</h2></a>
+		<a class="center" href="#"><h3 style="text-align:center">000</h3></a>
 		<!-- TemplateEndEditable -->  
 		</div>
 		
 		<div class="col-4"> 
-		<a class="center" href="library.html"><h1 style="text-align: center"> LIBRARY </h1></a> </div>
+		<a class="center" href="library.html"><h3 style="text-align: center"> LIBRARY </h3></a> </div>
 		
 		<div class="col-4">
 		<!-- TemplateBeginEditable name="previous-issue-number/link" -->
-		<a class="center" href="#"> <h2>000</h2> </a>
+		<a class="center" href="#"> <h3>000</h3> </a>
 		<!-- TemplateEndEditable -->
 		</div>
 	</div>  

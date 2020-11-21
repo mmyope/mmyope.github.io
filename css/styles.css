@@ -133,24 +133,6 @@ a:link, a:visited, a:hover, a:active {
 	object-fit: cover;
 }
 
-.box {
-  padding: var(--s1);
-  border: var(--border-thin) solid;
-  --color-light: #fff;
-  --color-dark: #000;
-  color: var(--color-dark);
-  background-color: var(--color-light);
-}
-
-.box * {
-  color: inherit;
-}
-
-.box.invert {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-}
-
 /*EXCEPTION SELECTORs*/
 
 .lastest-p {
@@ -168,9 +150,9 @@ a:link, a:visited, a:hover, a:active {
 
 #grid-lib {
 	display: grid;
-	grid-gap: var(--s1);
-	grid-template-columns: repeat(3, 1fr);
-
+	grid-gap: var(--s0);
+	grid-template-columns: repeat(3, 1fr); 
+	max-width: var(--measure);
 }
 
 .thumb {
@@ -217,14 +199,18 @@ a:link, a:visited, a:hover, a:active {
 
 h1{
 	font-family: 'EB garamond', serif;
-	font-size: var(--s1);
-	font-weight: 700;
+	font-size: var(--s2); 
 }
 
 h2{
 	font-family: 'EB garamond', serif;
 	font-size: var(--s1);
 	font-style: italic;
+}
+
+h3{
+	font-family: 'EB garamond', serif;
+	font-size: var(--s1);
 }
 
 p{
@@ -239,18 +225,13 @@ p{
 	text-align: left;
 }
 
-
-
 /*Xs*/
 
 @media (max-width: 575.98px) {
   #sm-header {
 	display: none;
 	}
-  #sm-library {
-	display: none;
-	}
-  #md-library {
+  #library-full {
 	display: none;
 	}
 }
@@ -259,26 +240,25 @@ p{
 /*Sm*/
 
 @media (min-width: 576px) {
-  #xs-header {
+	
+#xs-header {
 	display:none;
-	}
-  #xs-library {
-	display: none;
-	}
-   #md-library {
-	display: none;
-	}
-  #sm-header {
+}
+#sm-header {
 	display: block;
 	padding-left: auto;
 	padding-right: auto;
-	}
-  #about-p {
-		font-size: 2vw;
-	}
+}
+#library-slim {
+	display: none;
+}
+#about-p {
+	font-size: 2vw;
+}
 }
 
-/*Md*/
+/*Md Portrait*/
+
 
 @media (min-width: 768px) {
 	
@@ -290,17 +270,17 @@ p{
   	.grid {
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
   	}
-}
+	}
 	
-#sm-library {
-	display: none;
-}
-#xs-library {
-	display: none;
-}
-#md-library {
-	display: block;
+#library-full {
+	display: none
 }	
+#library-slim {
+	display: block;
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
 #about-text {
 	display: none;
 }
@@ -311,9 +291,33 @@ p{
 }
 .latest {
 	display: grid;
-	margin-left: var(--s4);
-	margin-right: var(--s4);
+	margin-left: var(--s3);
+	margin-right: var(--s3);
 	grid-gap: var(--s2);
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2,1fr);
+}
+}
+
+/*Md Landscape*/
+
+@media (min-width: 900px) {
+
+.grid{
+	display: grid;
+	grid-gap: 1.2rem;
+}	
+@supports (width: min(250px, 100%)) {
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+}
+#library-slim{
+	display: none;
+}
+#library-full{
+	display: block;
+}
+.latest {
+	display: block;
 }
 }
