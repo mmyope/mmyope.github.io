@@ -148,7 +148,14 @@ a:link, a:visited, a:hover, a:active {
 	margin-bottom: auto;
 }
 
-#grid-lib {
+#grid-lib-mobile {
+	display: grid;
+	grid-gap: var(--s0);
+	grid-template-columns: repeat(3, 1fr); 
+	max-width: var(--measure);
+}
+
+#grid-lib-desk {
 	display: grid;
 	grid-gap: var(--s0);
 	grid-template-columns: repeat(3, 1fr); 
@@ -228,19 +235,24 @@ p{
 /*Xs*/
 
 @media (max-width: 575.98px) {
-  #sm-header {
+#sm-header {
 	display: none;
-	}
-  #library-full {
+}
+ #library-icon-full {
 	display: none;
-	}
+}
+#library-page-mobile {
+	display: block;
+}
+#library-page-lg {
+	display: none;
+}	
 }
 
 
 /*Sm*/
 
 @media (min-width: 576px) {
-	
 #xs-header {
 	display:none;
 }
@@ -249,9 +261,21 @@ p{
 	padding-left: auto;
 	padding-right: auto;
 }
-#library-slim {
+#library-icon-slim {
+	display: block;
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+#library-icon-full {
 	display: none;
 }
+#library-page-mobile {
+	display: block;
+}
+#library-page-lg {
+	display: none;
+}	
 #about-p {
 	font-size: 2vw;
 }
@@ -261,7 +285,6 @@ p{
 
 
 @media (min-width: 768px) {
-	
 .grid{
 	display: grid;
 	grid-gap: 1.2rem;
@@ -271,16 +294,21 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
   	}
 	}
-	
-#library-full {
-	display: none
-}	
-#library-slim {
+#library-icon-slim {
 	display: block;
 	max-width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
 }
+#library-icon-full {
+	display: none
+}
+#library-page-mobile {
+	display: block;
+}
+#library-page-lg {
+	display: none;
+}	
 #about-text {
 	display: none;
 }
@@ -301,7 +329,6 @@ p{
 /*Md Landscape*/
 
 @media (min-width: 900px) {
-
 .grid{
 	display: grid;
 	grid-gap: 1.2rem;
@@ -311,13 +338,56 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
 }
-#library-slim{
+#library-icon-slim{
+	display: block;
+}
+#library-icon-full{
 	display: none;
 }
-#library-full{
+#library-page-mobile {
 	display: block;
 }
+#library-page-lg {
+	display: none;
+}	
 .latest {
 	display: block;
+}
+}
+
+/*Lg*/
+
+@media (min-width: 1200px) {
+#library-icon-slim {
+	display: block;
+}	
+#library-icon-full {
+	display: none;
+}
+#library-page-mobile {
+	display: none;
+}
+#library-page-lg {
+	display: block;
+}	
+#library-page-lg-grid {
+	display: grid;
+	max-width: 70vw;
+	grid-gap: var(--s3);
+	grid-template-columns: repeat(2,1fr);
+}
+#mm-empty {
+	display: none;
+	max-width: var(--s5);
+}
+#mm-001{
+	display: none;
+}
+#mm-002{
+	display: none;
+}
+.frame {
+	--n: 9;
+	--d: 16;
 }
 }
