@@ -158,8 +158,14 @@ a:link, a:visited, a:hover, a:active {
 #grid-lib-desk {
 	display: grid;
 	grid-gap: var(--s0);
-	grid-template-columns: repeat(3, 1fr); 
+	grid-template-columns: repeat(3, 1fr);
 	max-width: var(--measure);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 2.5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
 
 .thumb {
@@ -375,6 +381,8 @@ p{
 	max-width: 70vw;
 	grid-gap: var(--s3);
 	grid-template-columns: repeat(2,1fr);
+	min-height: 25rem;
+	margin-top: 0px;
 }
 #mm-empty {
 	display: none;
