@@ -57,7 +57,7 @@
 			<!-- TemplateEndEditable -->
 
 			<!-- TemplateBeginEditable name="story-summary" -->
-			<p class="lastest-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab ut consequuntur, molestiae excepturi tenetur.</p>
+			<p class="lastest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab ut consequuntur, molestiae excepturi tenetur.</p>
 			<!-- TemplateEndEditable -->
 			</div>
 		</div>
@@ -76,7 +76,7 @@
 	  <!-- TemplateEndEditable -->  
 	  </div>
 		
-	  <div class="col-4"> <a class="center" href="../library.html"><h3> LIBRARY </h3></a> </div>
+	  <div class="col-4"> <a class="center" href="../library.html"><h3> library </h3></a> </div>
 		
 	  <div class="col-4">
 	  <!-- TemplateBeginEditable name="previous-issue-number/link" -->
