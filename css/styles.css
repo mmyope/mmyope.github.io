@@ -135,7 +135,7 @@ a:link, a:visited, a:hover, a:active {
 
 .reel {
   display: flex;
-  height: auto;
+  height: 85vh;
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-color: #000 #fff;
@@ -159,7 +159,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .reel > img {
-  height: 50%;
+  height: 100%;
   flex-basis: auto;
   width: auto;
 }
@@ -170,6 +170,10 @@ a:link, a:visited, a:hover, a:active {
 
 .reel.overflowing {
   padding-bottom: 1rem;
+}
+
+.mm-003006-img {
+	height: 80vh;
 }
 
 /*EXCEPTION SELECTORs*/
@@ -291,7 +295,11 @@ p{
 #library-page-lg {
 	display: none;
 }
+.mm-003006-mobile {
+	height: 65%;
 }
+}
+
 
 
 /*Sm*/
@@ -322,6 +330,9 @@ p{
 }	
 #about-p {
 	font-size: 2vw;
+}
+.mm-003006-mobile {
+	height: 65%;
 }
 }
 
@@ -367,6 +378,9 @@ p{
 	margin-right: var(--s3);
 	grid-gap: var(--s2);
 	grid-template-columns: repeat(2,1fr);
+}
+.mm-003006-mobile {
+	height: 90%;
 }
 }
 
@@ -431,19 +445,6 @@ p{
 #mm-001{
 	display: block;
 }
-/*
-#mm-002{
-	display: none;
-}
-*/
-	
-
-#story-cover {
-	display: none;
-}
-#story-title
-#story-info
-	
 	
 .frame {
 	--n: 9;
