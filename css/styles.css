@@ -246,6 +246,7 @@ a:link, a:visited, a:hover, a:active {
 #glad_body{
 	overflow-y: hidden;
 	overflow-x: hidden;
+  overflow: hidden;
 }
 
 
