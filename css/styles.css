@@ -207,6 +207,13 @@ a:link, a:visited, a:hover, a:active {
 
 }
 
+.mm-glad {
+	
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .w-auto {
 	max-width: 80vw;
 	margin-left: auto;
@@ -235,6 +242,7 @@ a:link, a:visited, a:hover, a:active {
 	max-width: 100%;
 	display: block;
 }
+
 
 /*TYPE*/
 
@@ -368,6 +376,7 @@ p{
 	display: grid;
 	grid-gap: 1.2rem;
 }	
+}
 @supports (width: min(250px, 100%)) {
 .grid {
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
@@ -384,7 +393,6 @@ p{
 }
 .latest {
 	display: block;
-}
 }
 
 /*Lg*/
@@ -405,10 +413,5 @@ p{
 }
 #mm-001{
 	display: block;
-}
-	
-.frame {
-	--n: 9;
-	--d: 16;
-}
+	}
 }
