@@ -247,6 +247,8 @@ a:link, a:visited, a:hover, a:active {
 	overflow-y: hidden;
 	overflow-x: hidden;
   overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 
