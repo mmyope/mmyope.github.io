@@ -244,11 +244,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #glad_body{
+<<<<<<< Updated upstream
 	overflow-y: hidden;
 	overflow-x: hidden;
   overflow: hidden;
   touch-action: none;
   -ms-touch-action: none;
+=======
+  	overflow: hidden;
+>>>>>>> Stashed changes
 }
 
 
