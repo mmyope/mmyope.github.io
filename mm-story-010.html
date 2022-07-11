@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Les Éditions MMYOPE - story - 009</title>
+<title>Les Éditions MMYOPE - story - 010</title>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
@@ -13,6 +13,17 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/us_src.js"></script>
+<script type="text/javascript" src="js/pz_src.js"></script>
+<script type="text/javascript" src="js/random_image_eadr.js"></script>
+<script type="text/javascript">
+      $(function () {
+          $('#image_frame').each(function () {
+              new RTP.PinchZoom($(this), {});
+          });
+      })
+  </script>
 
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/eb-garamond:n4:default.js" type="text/javascript"></script>
 </head>
@@ -25,13 +36,10 @@
 </a>
 
 </header>
- <main class="stack w-auto">
-
-<img id="mm-009-gif" class="mm-007009-gif" src="images/mm-009-story/mm-009-smalldrawings.gif" alt="mm-009">
-<h2>
-<a href="#" onclick="document.getElementById('mm-009-gif').src='images/mm-009-story/mm-009-smalldrawings.gif'">Water this plant, lifted spirits.</a>
-</h2>
-
+<main id="eadr_body">
+  <div class="test_frame_class thumb" id="image_frame">
+    <img id="eadr_img" alt="eadr_img">
+  </div>
 
   <!-- <div class="stack">
    <div class="container">
@@ -51,15 +59,19 @@
 	<div class="stack">
 	<div class="container">
 	<div class="row">
-		<div class="col-4"><a class="center" href="mm-story-010.html">010<h3 style="text-align:center"></h3></a></div>
+		<div class="col-4"><a class="center" href="mm-011-story.html"><h3 style="text-align:center">011</h3></a></div>
 
 		<div class="col-4"><a class="center" href="library.html"><h3 style="text-align: center"> library </h3></a> </div>
 
-		<div class="col-4"><a class="center" href="mm-008-story.html"> <h3>008</h3></a></div>
+		<div class="col-4"><a class="center" href="mm-009-story.html"> <h3>009</h3></a></div>
 	</div>
 	</div>
 	</div>
 </footer>
+
+  <script type="text/javascript">
+    getRandomImage(1);
+  </script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.4.1.min.js"></script>
