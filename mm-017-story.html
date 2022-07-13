@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-<title>Les Éditions MMYOPE - story - 016</title>
+<title>Les Éditions MMYOPE - story - 017</title>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
@@ -19,7 +19,6 @@ body,td,th {font-family: EB-garamond, serif;}
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/eb-garamond:n4:default.js" type="text/javascript"></script>
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/sss.js"></script>
 
 </head>
 
@@ -33,33 +32,34 @@ body,td,th {font-family: EB-garamond, serif;}
 </header>
 
 <main>
-	<div class="slider">
-		<img class="active" src="images/mm-017-story/glad-63.jpg" />
-		<img src="images/mm-017-story/glad-64.jpeg" />
-		<img src="images/mm-017-story/glad-65.jpeg" />
-		<img src="images/mm-017-story/glad-66.jpeg" />
-  </div>
-  <nav class="slider-nav">
-    <ul>
-      <li class="arrow">
-        <button class="previous">
-          <span>
-            <i class="ion-arrow-left-c"></i>
-          </span>
-        </button>
-      </li>
-      <li class="arrow">
-        <button class="next">
-          <span>
-            <i class="ion-arrow-right-c"></i>
-          </span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-	<!-- <div class="slider">
+	<div class="center">
+		<div>
+	  	<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-01.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-02.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-03.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-04.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-05.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-06.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-08.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-09.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-10.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-11.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-12.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-13.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-14.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-15.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-16.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-17.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-18.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-19.jpeg">
+			<img class="mm-017018-img" src="images/mm-017-story/web-mm-017-story-20.jpeg">
+		</div>
 
-	</div> -->
+		<div class="row">
+	  	<div class="col-4"><button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button></div>
+			<div class="col-4"><button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button></div>
+		</div>
+	</div>
 </main>
 
 <footer>
@@ -76,7 +76,26 @@ body,td,th {font-family: EB-garamond, serif;}
 	</div>
 </footer>
 
-
-
 </body>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mm-017018-img");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
 </html>
