@@ -467,7 +467,7 @@ p {
   }
 
   .mm-019027-img {
-    width: 80vw;
+    max-width: 80vw;
   }
 }
 
