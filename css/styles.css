@@ -361,7 +361,7 @@ a:link, a:visited, a:hover, a:active {
 #mm-016-text {
   max-width: 45vw;
   max-height: 60vh;
-  overflow-x: : hidden;
+  overflow-x: hidden;
   overflow-y: auto;
   scrollbar-color: #000 #fff;
 }
