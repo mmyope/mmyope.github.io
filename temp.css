@@ -267,7 +267,7 @@ GRID layouts
 
 #menuamorphous,
 #menunyc,
-#menukindness h3 {
+#menukindness > h3 {
     font-family: "EB Garamond", serif;
     font-style: italic;
     font-size: var(--s4);
