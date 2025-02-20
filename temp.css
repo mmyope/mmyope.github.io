@@ -1,95 +1,91 @@
 :root {
-  --ratio: 1.2;
-  
-  --s-5: calc(var(--s-4) / var(--ratio));
-  --s-4: calc(var(--s-3) / var(--ratio));
-  --s-3: calc(var(--s-2) / var(--ratio));
-  --s-2: calc(var(--s-1) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: .85rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s1) * var(--ratio));
-  --s3: calc(var(--s2) * var(--ratio));
-  --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
-  
-  
-  --1sq: 3.9rem;
-  --2sq: calc(var(--1sq) * 2 + var(--gap) * 1);
-  --3sq: calc(var(--1sq) * 3 + var(--gap) * 2);
-  --4sq: calc(var(--1sq) * 4 + var(--gap) * 3);
-  --5sq: calc(var(--1sq) * 5 + var(--gap) * 4);
-  --6sq: calc(var(--1sq) * 6 + var(--gap) * 5);
-  --7sq: calc(var(--1sq) * 7 + var(--gap) * 6);
-  --8sq: calc(var(--1sq) * 8 + var(--gap) * 7);
-  --9sq: calc(var(--1sq) * 9 + var(--gap) * 8);
-  --10sq: calc(var(--1sq) * 10 + var(--gap) * 9);
-  --11sq: calc(var(--1sq) * 11 + var(--gap) * 10);
-  --12sq: calc(var(--1sq) * 12 + var(--gap) * 11);
-  
-  --gap: .8rem;
+    --ratio: 1.2;
+
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 0.85rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+
+    --1sq: 3.9rem;
+    --2sq: calc(var(--1sq) * 2 + var(--gap) * 1);
+    --3sq: calc(var(--1sq) * 3 + var(--gap) * 2);
+    --4sq: calc(var(--1sq) * 4 + var(--gap) * 3);
+    --5sq: calc(var(--1sq) * 5 + var(--gap) * 4);
+    --6sq: calc(var(--1sq) * 6 + var(--gap) * 5);
+    --7sq: calc(var(--1sq) * 7 + var(--gap) * 6);
+    --8sq: calc(var(--1sq) * 8 + var(--gap) * 7);
+    --9sq: calc(var(--1sq) * 9 + var(--gap) * 8);
+    --10sq: calc(var(--1sq) * 10 + var(--gap) * 9);
+    --11sq: calc(var(--1sq) * 11 + var(--gap) * 10);
+    --12sq: calc(var(--1sq) * 12 + var(--gap) * 11);
+
+    --gap: 0.8rem;
 }
 
 * {
-font-family: "Akzidenz-Grotesk Next", sans-serif;
-font-weight: normal;
-font-size: var(--s0);
-font-style: normal;
+    font-family: "Akzidenz-Grotesk Next", sans-serif;
+    font-weight: normal;
+    font-size: var(--s0);
+    font-style: normal;
 
-margin: 0;
-padding: 0;
-
+    margin: 0;
+    padding: 0;
 }
 
 input:is([type="checkbox"], [type="radio"]),
 select,
 label,
-button,
-{
-cursor: pointer;
+button {
+    cursor: pointer;
 }
 
 /*
 TYPE
 */
 
-
 @font-face {
-    font-family: 'Akzidenz-Grotesk Next';
-    src: url('AkzidGrtskNext-Regular.eot');
-    src: local('Akzidenz-Grotesk Next Regular'), local('AkzidGrtskNext-Regular'),
-        url('AkzidGrtskNext-Regular.eot?#iefix') format('embedded-opentype'),
-        url('AkzidGrtskNext-Regular.woff2') format('woff2'),
-        url('AkzidGrtskNext-Regular.woff') format('woff'),
-        url('AkzidGrtskNext-Regular.ttf') format('truetype');
+    font-family: "Akzidenz-Grotesk Next";
+    src: url("AkzidGrtskNext-Regular.eot");
+    src:
+        local("Akzidenz-Grotesk Next Regular"),
+        local("AkzidGrtskNext-Regular"),
+        url("AkzidGrtskNext-Regular.eot?#iefix") format("embedded-opentype"),
+        url("AkzidGrtskNext-Regular.woff2") format("woff2"),
+        url("AkzidGrtskNext-Regular.woff") format("woff"),
+        url("AkzidGrtskNext-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 h1 {
-font-family: "EB Garamond", serif;
-font-weight: 700;
-font-size: var(--s4);
-letter-spacing: .015rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: var(--s4);
+    letter-spacing: 0.015rem;
 }
 
 h3 {
-font-size: calc(var(--s1)*1.2);
-letter-spacing: .04rem;
+    font-size: calc(var(--s1) * 1.2);
+    letter-spacing: 0.04rem;
 }
 
-p { 
-line-height: 1.1rem;
+p {
+    line-height: 1.1rem;
 }
 
 figcaption {
+    padding-top: var(--gap);
 
-padding-top: var(--gap);
-
-font-family: 'EB Garamond', serif; 
-font-style: italic; 
-font-size: var(--s1);
-
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: var(--s1);
 }
 
 /*
@@ -97,22 +93,20 @@ LINKS
 */
 
 a {
-color: #00a1fe;
-cursor: pointer;
-text-decoration: none;
+    color: #00a1fe;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:link {
-
 }
 
 a h1 {
-color: black;
+    color: black;
 }
 
-
 a:visited {
-/*
+    /*
 color: #0117DB;
 */
 }
@@ -120,12 +114,12 @@ color: #0117DB;
 a:focus {
 }
 
-a:hover{
-text-decoration: underline;
+a:hover {
+    text-decoration: underline;
 }
 
-a:hover:not(h1){
-text-decoration: none;
+a:hover:not(h1) {
+    text-decoration: none;
 }
 
 a:active {
@@ -135,54 +129,53 @@ a:active {
 SEMANTIC HTML TAGS
 */
 
-html{
-height: 100%;
-display: grid;
-font-size: var(--s0);
-
+html {
+    height: 100%;
+    display: grid;
+    font-size: var(--s0);
 }
 
 body {
-width: var(--12sq);
-height: var(--9sq);
-margin: auto;
-overflow: hidden;
+    width: var(--12sq);
+    height: var(--9sq);
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-grid-area: hd;
-display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
-align-items: baseline;
+    grid-area: hd;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 nav {
-grid-area: nav;
+    grid-area: nav;
 }
 
 main {
-grid-area: mn;
+    grid-area: mn;
 }
 
 footer {
-grid-area: ft;
+    grid-area: ft;
 }
 
 #gifimg {
-grid-area: gif;
-margin-top: -2.1rem;
+    grid-area: gif;
+    margin-top: -2.1rem;
 }
 
 img {
-width: var(--4sq);
+    width: var(--4sq);
 }
 
-.grid{
-display: grid;
-grid-template-columns: repeat(12, var(--1sq));
-grid-template-rows: repeat(9, var(--1sq));
-grid-gap: var(--gap);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, var(--1sq));
+    grid-template-rows: repeat(9, var(--1sq));
+    grid-gap: var(--gap);
 }
 
 /*
@@ -190,227 +183,195 @@ GRID layouts
 */
 
 #index {
-grid-template-areas:
-
-"hd hd hd hd hd hd hd hd hd hd hd hd"
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-
-". . nav nav nav nav nav nav nav . . ."
-". . . . . . . . . . . ."
-"ft ft ft ft ft ft ft ft ft ft ft ft"
-
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . . . . . . . . . . ."
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 
 #poem {
-grid-template-areas:
-
-"hd hd hd hd hd hd hd hd hd hd hd hd"
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-". . nav nav nav nav nav nav nav . . ."
-
-". . nav nav nav nav nav nav nav . . ."
-". . . . . . . . . . . ."
-"ft ft ft ft ft ft ft ft ft ft ft ft"
-
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . nav nav nav nav nav nav nav . . ."
+        ". . . . . . . . . . . ."
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 
 #gif {
-grid-template-areas:
-
-"hd hd hd hd hd hd hd hd hd hd hd hd"
-". . . . . . . . . . . ."
-". . . . . . . . . . . ."
-
-". . . gif gif gif gif . . . . ."
-". . . gif gif gif gif . . . . ."
-". . . gif gif gif gif . . . . ."
-
-". . . . . . . . . . . ."
-". . . . . . . . . . . ."
-"ft ft ft ft ft ft ft ft ft ft ft ft"
-
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . gif gif gif gif . . . . ."
+        ". . . gif gif gif gif . . . . ."
+        ". . . gif gif gif gif . . . . ."
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 
-
 #index ul {
-	display: grid;
-	grid-template-columns: repeat(6, var(--1sq));
-	grid-template-rows: repeat(6, var(--1sq));
-	grid-gap: var(--gap);
-	
-	list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, var(--1sq));
+    grid-template-rows: repeat(6, var(--1sq));
+    grid-gap: var(--gap);
+
+    list-style-type: none;
 }
 
 #menuan {
-align-self: end;
-	grid-area: 2 / 6;
-	margin-bottom: 4.25rem;
+    align-self: end;
+    grid-area: 2 / 6;
+    margin-bottom: 4.25rem;
 }
 
 #menuamorphous {
-	align-self: end;
-	grid-area: 2 / 3;
-	margin-left: 3rem;
+    align-self: end;
+    grid-area: 2 / 3;
+    margin-left: 3rem;
 }
 
 #menunyc {
-	align-self: end;
-	grid-area: 3 / 3;
+    align-self: end;
+    grid-area: 3 / 3;
 }
 
 #menukindness {
-	align-self: end;
-	grid-area: 4 / 3;
-	margin-left: -2.5rem;
+    align-self: end;
+    grid-area: 4 / 3;
+    margin-left: -2.5rem;
 }
 
 #menubased {
-	align-self: end;
-	grid-area: 5 / 1;
+    align-self: end;
+    grid-area: 5 / 1;
 }
 
 #menugroup {
-	align-self: start;
-	grid-area: 6 / 1;
+    align-self: start;
+    grid-area: 6 / 1;
 }
 
 #index footer {
-display: flex;
-flex-direction: row;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #index footer > * {
-padding-right: var(--gap);
+    padding-right: var(--gap);
 }
 
 #index footer img {
-width: var(--1sq);
+    width: var(--1sq);
 }
 
 #poemtext {
-font-family: 'EB Garamond', serif; 
-padding-top: 3rem;
+    font-family: "EB Garamond", serif;
+    padding-top: 3rem;
 }
 
 /*
 SMALL INTERFACE
 */
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
+    body {
+        width: var(--4sq);
+    }
 
-body {
-width: var(--4sq);
+    .grid {
+        grid-template-columns: repeat(4, var(--1sq));
+    }
+
+    #index {
+        grid-template-areas:
+            "hd hd hd hd"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            ". . . ."
+            "ft ft ft ft";
+    }
+
+    #poem {
+        grid-template-areas:
+            "hd hd hd hd"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            "nav nav nav nav"
+            ". . . ."
+            "ft ft ft ft";
+    }
+
+    #gif {
+        grid-template-areas:
+            "hd hd hd hd"
+            ". . . ."
+            ". . . ."
+            "gif gif gif gif"
+            "gif gif gif gif"
+            "gif gif gif gif"
+            ". . . ."
+            ". . . ."
+            "ft ft ft ft";
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    #index ul {
+        grid-template-columns: repeat(4, var(--1sq));
+    }
+
+    #menuan {
+        grid-area: 2 / 1;
+        margin-left: 0.5rem;
+    }
+
+    #menuamorphous {
+        grid-area: 2 / 2;
+        margin-left: -2.7rem;
+    }
+
+    #menunyc {
+        grid-area: 3 / 2;
+        margin-left: -2.7rem;
+    }
+
+    #menukindness {
+        grid-area: 4 / 2;
+        margin-left: -2.7rem;
+    }
+
+    #menubased {
+        margin-left: 0.5rem;
+    }
+
+    #menugroup {
+        margin-left: 0.5rem;
+    }
+
+    #poemtext {
+        font-family: "EB Garamond", serif;
+        padding-top: 3rem;
+    }
 }
-
-.grid{
-grid-template-columns: repeat(4, var(--1sq));
-}
-
-#index {
-grid-template-areas:
-
-"hd hd hd hd"
-"nav nav nav nav"
-"nav nav nav nav"
-
-"nav nav nav nav"
-"nav nav nav nav"
-"nav nav nav nav"
-
-"nav nav nav nav"
-". . . ."
-"ft ft ft ft"
-
-}
-
-#poem {
-grid-template-areas:
-
-"hd hd hd hd"
-"nav nav nav nav"
-"nav nav nav nav"
-
-"nav nav nav nav"
-"nav nav nav nav"
-"nav nav nav nav"
-
-"nav nav nav nav"
-". . . ."
-"ft ft ft ft"
-
-}
-
-#gif {
-grid-template-areas:
-
-
-"hd hd hd hd"
-". . . ."
-". . . ."
-
-"gif gif gif gif"
-"gif gif gif gif"
-"gif gif gif gif"
-
-". . . ."
-". . . ."
-"ft ft ft ft"
-
-}
-
-header {
-flex-direction: row;
-}
-
-#index ul {
-	grid-template-columns: repeat(4, var(--1sq));
-}
-
-#menuan {
-	grid-area: 2 / 1;
-	margin-left: .5rem;
-}
-
-#menuamorphous {
-	grid-area: 2 / 2;
-	margin-left: -2.7rem;
-}
-
-
-#menunyc {
-	grid-area: 3 / 2;
-	margin-left: -2.7rem;
-}
-
-#menukindness {
-	grid-area: 4 / 2;
-	margin-left: -2.7rem;
-}
-
-#menubased {
-	margin-left: .5rem;
-}
-
-#menugroup {
-	margin-left: .5rem;
-}
-
-#poemtext {
-font-family: 'EB Garamond', serif; 
-padding-top: 3rem;
-}
-
-
-  
-}
-
