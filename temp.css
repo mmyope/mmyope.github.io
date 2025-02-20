@@ -240,34 +240,20 @@ GRID layouts
     align-self: end;
     grid-area: 2 / 3;
     margin-left: 3rem;
-
-    font-family: "EB Garamond", serif;
-    font-style: italic;
-    font-size: var(--s4);
 }
 
 #menunyc {
     align-self: end;
     grid-area: 3 / 3;
-
-    font-family: "EB Garamond", serif;
-    font-style: italic;
-    font-size: var(--s4);
 }
 
 #menukindness {
     align-self: end;
     grid-area: 4 / 3;
     margin-left: -2.5rem;
-
-    font-family: "EB Garamond", serif;
-    font-style: italic;
-    font-size: var(--s4);
 }
 
-#menuamorphous,
-#menunyc,
-#menukindness > h3 {
+.serifmenu {
     font-family: "EB Garamond", serif;
     font-style: italic;
     font-size: var(--s4);
