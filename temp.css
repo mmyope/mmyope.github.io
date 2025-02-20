@@ -265,6 +265,14 @@ GRID layouts
     font-size: var(--s4);
 }
 
+#menuamorphous,
+#menunyc,
+#menukindness h3 {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: var(--s4);
+}
+
 #menubased {
     align-self: end;
     grid-area: 5 / 1;
