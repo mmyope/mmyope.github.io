@@ -292,7 +292,7 @@ GRID layouts
 SMALL INTERFACE
 */
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     body {
         width: var(--4sq);
     }
